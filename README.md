@@ -10,7 +10,7 @@ Modernize Pewlett Hackard HR data management by migrating their spreadsheets to 
 ## Results
 ERD diagram:
 
-!["ERD"](../EmployeeDB.png "ERD Diagram")
+!["ERD"](./EmployeeDB.png "ERD Diagram")
 
 Criteria used for finding employees that are retiring are as follows.
  - Employees born between '1952-01-01' and '1955-12-31'
@@ -31,9 +31,34 @@ Also department head for Sales wanted a list of employees in both sales and deve
 ## Summary
 Based on the findings above we have 33,118 employees retiring in 2020 that were hired between 1985 and 1988. However this doesn't take into account all the employees that were hired before and after and would reach retiring age in 2020.
 
+
 ## Challenge Overview
+Based on the project further information was requested by the manager, to prepare for the upcoming "silver tsunami". 
+
+Criteria shown below:
+ - The Number of Retiring Employees by Title
+   -- Criteria is employees born between '1952-01-01' and '1955-12-31'
+ - The Employees Eligible for the Mentorship Program
+   -- Criteria is employees born between '1965-01-01' and '1965-12-31'
 
 ## Challenge Results
+
+### Retiring Employees by Title
+
+#### Total number of employees retirng with unique titles are 90398
+!["Total retiring"](./Images/total_retiring_unique_titles.png "total retiring unique titles")
+
+#### Total number of employees retirng by titles shown below
+!["Total retiring by titles"](./Images/total_retiring_counts_by_titles.png "total retiring by titles")
+
+### Eligible Employees for Mentor Program
+
+#### Total count of the employees eligible for mentor program
+!["Total count"](./Images/total_mentor_eligible_titles.png "mentor program count")
+
+#### Total count of the employees eligible for mentor program by department
+!["Total count by department"](./Images/total_mentor_eligible_by_titles.png "mentor program count by dept")
+
 
 ## Challenge Summary
 
