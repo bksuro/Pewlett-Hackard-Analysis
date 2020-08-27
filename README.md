@@ -70,16 +70,21 @@ Answering following questions we find that we need to modify our queries further
  - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
   -- 90398
  - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-  -- No there are not enough employees. There are only 1549 employees.
+  -- No there are not enough employees. There are only 1549 employees qualified to mentor new employees, which is very very low.
   
 Based on the challenge results adding the following criteria will get us the actual results of retiring employees.
  - Employees born between 1952-01-01 and 1955-12-31
  - Employees currently employed (to_date = '9999-01-01')
- - The total number of current employees getting ready to retire is 72,458 !["current and retiring totals"](./Images/total_retiring_current_employees_titles.png "Total current and retriring employees")
+ - The total number of current employees getting ready to retire adding the new criteria are 72,458 
+ !["current and retiring totals"](./Images/total_retiring_current_employees_titles.png "Total current and retriring employees")
  
 For mentor program changing the criteria gives us better information
  - Employees born between 1956-01-01 and 1965-12-31
+ - Hired between 1985-01-01 and 1985-12-31
+ - The total number of employees that qualify to be mentors with the new criteria are 19,736
  
- ![](./Images/total_mentor_eligible_titles_NEW.png "Total mentors after updated query")
+ We have 19K+ mentors, though that is a smaller number but each can mentor about 5 new employees before they retire, as opposed to 1549 having to mentor like about 50.
+ !["Total mentors after update"](./Images/total_mentor_eligible_titles_NEW.png "Total mentors after updated query")
  
- ![](./Images/total_mentor_eligible_by_titles_NEW.png "Total mentors after updated query by titles")
+ This shows some departments the mentor to mentee ratio could be as low as 1 to 1, to as high as 1 to 10.
+ !["Total mentors after update by titles"](./Images/total_mentor_eligible_by_titles_NEW.png "Total mentors after updated query by titles")
