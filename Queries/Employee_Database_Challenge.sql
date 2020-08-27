@@ -119,6 +119,8 @@ FROM temp_unique_titles
 GROUP BY title
 ORDER BY count desc;
 
+DROP TABLE temp_mentorship_eligibilty;
+
 SELECT DISTINCT ON (e.emp_no) e.emp_no,
        e.first_name,
        e.last_name,
@@ -126,16 +128,31 @@ SELECT DISTINCT ON (e.emp_no) e.emp_no,
        de.from_date,
 	   de.to_date,
 	   t.title
--- INTO temp_mentorship_eligibilty
+INTO temp_mentorship_eligibilty
 FROM employees AS e
 JOIN dept_emp AS de
   ON (e.emp_no = de.emp_no)
 JOIN titles AS t
   ON (e.emp_no = t.emp_no)
-WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+WHERE (e.birth_date BETWEEN '1956-01-01' AND '1965-12-31')
   AND (e.hire_date BETWEEN '1985-01-01' AND '1985-12-31')
   AND (t.to_date = '9999-01-01')
 ORDER BY emp_no; 
 
+SELECT COUNT(emp_no)
+FROM temp_mentorship_eligibilty;
+
+SELECT COUNT(title), title
+FROM temp_mentorship_eligibilty
+GROUP BY title
+ORDER BY count desc;
+
+
+SELECT COUNT(emp_no)
+FROM temp_retirement_titles;
+
 SELECT COUNT(title)
 FROM temp_mentorship_eligibilty;
+
+SELECT DISTINCT ON (title) title
+FROM titles;
