@@ -43,6 +43,11 @@ Criteria shown below:
 
 ## Challenge Results
 
+- Looking at the results there are quite a large number of employees retring 90k+.
+- However number of employees currently employeed and retiring are only 33k+ from the project criteria, this doesn't match the findings.
+- There are very few employees that qualify to be mentors (1549).
+- Rather than using the 1965 as the birth year for mentor program criteria, we should have birth years between 1956 and 1965.
+
 ### Retiring Employees by Title
 
 #### Total number of employees retirng with unique titles are 90398
@@ -61,4 +66,16 @@ Criteria shown below:
 
 
 ## Challenge Summary
-
+Answering following questions we find that we need to modify our queries further.
+ - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+  -- 90398
+ - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+  -- No there are not enough employees. There are only 1549 employees.
+  
+Based on the challenge results adding the following criteria will get us the actual results of retiring employees.
+ - Employees born between 1952-01-01 and 1955-12-31
+ - Employees currently employed (to_date = '9999-01-01')
+ - The total number of current employees getting ready to retire is 72,458 !["current and retiring totals"](./Images/total_retiring_current_employees_titles.png "Total current and retriring employees")
+ 
+For mentor program changing the criteria gives us better information
+ - Employees born between 1956-01-01 and 1965-12-31
