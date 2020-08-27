@@ -14,9 +14,9 @@ ERD diagram:
 
 Criteria used for finding employees that are retiring are as follows.
  - Employees born between '1952-01-01' and '1955-12-31'
-   -- That makes them to be in the ages between 65 to 68 years old in 2020. 
+   - That makes them to be in the ages between 65 to 68 years old in 2020. 
  - Employees hired between '1985-01-01' and '1988-12-31'
-   -- That makes them to be with the company for 32 to 35 years in 2020.
+   - That makes them to be with the company for 32 to 35 years in 2020.
 
 Based on the above criteria we see that we have 41,380 employees getting ready to retire. However that doesnt take into account employees that are not currently employeed. So adding a further constraint to restrict employees currently employeed and retiring, we see that the count is at 33,118.
 
@@ -37,9 +37,9 @@ Based on the project further information was requested by the manager, to prepar
 
 Criteria shown below:
  - The Number of Retiring Employees by Title
-   -- Criteria is employees born between '1952-01-01' and '1955-12-31'
+   - Criteria is employees born between '1952-01-01' and '1955-12-31'
  - The Employees Eligible for the Mentorship Program
-   -- Criteria is employees born between '1965-01-01' and '1965-12-31'
+   - Criteria is employees born between '1965-01-01' and '1965-12-31'
 
 ## Challenge Results
 
@@ -68,9 +68,9 @@ Criteria shown below:
 ## Challenge Summary
 Answering following questions we find that we need to modify our queries further.
  - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-  -- 90398
+   - 90398
  - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-  -- No there are not enough employees. There are only 1549 employees qualified to mentor new employees, which is very very low.
+   - No there are not enough employees. There are only 1549 employees qualified to mentor new employees, which is very very low.
   
 Based on the challenge results adding the following criteria will get us the actual results of retiring employees.
  - Employees born between 1952-01-01 and 1955-12-31
