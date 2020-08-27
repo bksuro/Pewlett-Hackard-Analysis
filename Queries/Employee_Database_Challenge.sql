@@ -51,6 +51,8 @@ ORDER BY count desc;
 
 
 -- Creating deliverable 2 table
+DROP TABLE mentorship_eligibilty;
+
 SELECT DISTINCT ON (e.emp_no) e.emp_no,
        e.first_name,
        e.last_name,
@@ -60,11 +62,11 @@ SELECT DISTINCT ON (e.emp_no) e.emp_no,
 	   t.title
 INTO mentorship_eligibilty
 FROM employees AS e
-INNER JOIN dept_emp AS de
+JOIN dept_emp AS de
   ON (e.emp_no = de.emp_no)
-INNER JOIN titles AS t
+JOIN titles AS t
   ON (e.emp_no = t.emp_no)
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
   AND (t.to_date = '9999-01-01')
-ORDER BY emp_no, to_date DESC; 
+ORDER BY emp_no; 
   
