@@ -79,3 +79,7 @@ Based on the challenge results adding the following criteria will get us the act
  
 For mentor program changing the criteria gives us better information
  - Employees born between 1956-01-01 and 1965-12-31
+ 
+ ![](./Images/total_mentor_eligible_titles_NEW.png "Total mentors after updated query")
+ 
+ ![](./Images/total_mentor_eligible_by_titles_NEW.png "Total mentors after updated query by titles")
